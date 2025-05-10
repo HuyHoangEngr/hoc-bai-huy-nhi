@@ -1,0 +1,2 @@
+Xoa tat cac cac Nodejs ban cu va xoa luon NVM.
+Chi cai Nodejs14.21.3.

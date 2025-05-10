@@ -1,0 +1,173 @@
+// reset slick slider css
+.slick-prev {
+    width: 44px !important;
+    height: 48px !important;
+    background: white !important;
+    border: 2px solid #d7d7d7 !important;
+    left: -10px !important;
+    top: 50%;
+    z-index: 1000;
+
+    &:hover {
+        background: #edecec !important;
+    }
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-family: FontAwesome !important;
+    color: red !important;
+}
+
+.slick-next {
+    width: 44px !important;
+    height: 48px !important;
+    background: white !important;
+    border: 2px solid #d7d7d7 !important;
+    right: -10px !important;
+    top: 50%;
+    z-index: 1000;
+
+    &:hover {
+        background: #edecec !important;
+    }
+}
+
+.section-share {
+    &.section-specialty {
+        background: #ececec;
+    }
+
+    &.section-outstanding-doctor {
+        background: #ececec;
+    }
+
+    &.section-about {
+        height: 500px !important;
+        border-top: 1px solid #dedede;
+        border-bottom: 1px solid #dedede;
+    }
+
+    .section-body {
+        .section-customize {
+            .bg-image {
+                width: 314px;
+                height: 197px;
+                background-position: center center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-color: #eee;
+
+                &.section-specialty {
+                    background-image: url("../../assets/specialty/co-xuong-khop.jpg");
+                }
+
+                &.section-medical-facility {
+                    background-image: url("../../assets/medical-facility/benh-vien-thu-cuc.jpg");
+                }
+
+                &.section-outstanding-doctor {
+                    background-image: url("../../assets/outstanding-doctor/doctor-avatar.jpg");
+                    height: 120px;
+                    width: 120px;
+                    border-radius: 50%;
+                }
+
+                &.section-handbook {
+                    background-image: url("../../assets/handbook/handbook.webp");
+                }
+            }
+        }
+    }
+}
+.section-share {
+    height: 370px;
+
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0 110px;
+        padding: 15px 0;
+
+        .section-header {
+            height: 60px;
+            margin-bottom: 30px;
+            padding-top: 20px;
+
+            .title-section {
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float: right;
+                padding: 10px 15px;
+                border: none;
+                outline: none;
+                display: block;
+                background: #ebebeb;
+                color: black;
+                text-transform: uppercase;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                    background: #f7d800;
+                }
+            }
+        }
+    }
+}
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display: flex;
+        justify-content: center;
+    }
+
+    .section-customize {
+        padding: 5px;
+        .customize-border {
+            border: 1px solid #d49c0e;
+            padding: 20px;
+        }
+    }
+}
+
+.home-footer {
+    padding-top: 10px;
+    text-align: center;
+
+    a {
+        text-decoration: unset;
+    }
+}
+
+.section-about {
+    padding: 0 100px;
+    .section-about-header {
+        padding: 20px 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .section-about-content {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+
+        .content-left {
+            width: 60%;
+        }
+
+        .content-right {
+            width: 40%;
+
+            p {
+                text-align: justify;
+                font-style: italic;
+                padding: 15px;
+            }
+        }
+    }
+}
