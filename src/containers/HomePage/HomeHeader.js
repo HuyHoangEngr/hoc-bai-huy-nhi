@@ -10,97 +10,199 @@ class HomeHeader extends Component {
         super(props);
         this.state = {
             idChapter: "",
+            idLesson: "",
         };
     }
 
-    changeLanguage = (language) => {
-        this.props.changeLanguageAppRedux(language);
+    resetIdLesson = () => {
+        this.setState({
+            idLesson: "",
+        });
+        console.log("Reset Id lesson >>>");
     };
 
-    handleClick = (idRequest) => {
+    handleClickChapter = (idChapterRequest) => {
         this.setState({
-            idChapter: idRequest,
+            idChapter: idChapterRequest,
         });
-        console.log("check id >>>", this.state.idChapter);
+        this.resetIdLesson();
+        console.log("check id chapter >>>", this.state.idChapter);
+    };
+
+    handleClickLesson = (idLessonRequest) => {
+        this.setState({
+            idLesson: idLessonRequest,
+        });
+        console.log("check id lesson >>>", this.state.idLesson);
     };
 
     render() {
-        let language = this.props.lang;
-        console.log("check language: ", language);
         return (
             <React.Fragment>
                 <div className="container">
                     <div class="scrollmenu">
-                        <div
-                            className="chapter-name"
-                            onClick={() => {
-                                this.handleClick("0");
-                            }}
-                        >
-                            Chương 00. Gioi thieu
+                        <div className="chapter">
+                            <div
+                                className="chapter-name"
+                                onClick={() => {
+                                    this.handleClickChapter("0");
+                                }}
+                            >
+                                Chương 00. Gioi thieu
+                            </div>
                             <div
                                 className={
                                     this.state.idChapter === "0"
-                                        ? "lesson-title-click"
-                                        : "lesson-title-none-click"
+                                        ? "chapter-click"
+                                        : "chapter-none-click"
                                 }
                             >
-                                <a href="#home">Home</a>
-                                <a href="#news">News</a>
-                                <a href="#contact">Contact</a>
-                            </div>
-                        </div>
-                        <div
-                            className="chapter-name"
-                            onClick={() => {
-                                this.handleClick("1");
-                            }}
-                        >
-                            Chương 01. Khao bông
-                            <div
-                                className={
-                                    this.state.idChapter === "1"
-                                        ? "lesson-title-click"
-                                        : "lesson-title-none-click"
-                                }
-                            >
-                                <a href="#home">Home</a>
-                                <a href="#news">News</a>
-                                <a href="#contact">Contact</a>
-                                <a href="#home">Home</a>
-                                <a href="#news">News</a>
-                                <a href="#contact">Contact</a>
-                                <a href="#about">About</a>
-                                <a href="#support">Support</a>
-                                <a href="#blog">Blog</a>
-                                <a href="#tools">Tools</a>
+                                <div
+                                    className={
+                                        this.state.idLesson === "0"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("0");
+                                    }}
+                                >
+                                    Home
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "1"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("1");
+                                    }}
+                                >
+                                    News
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "2"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("2");
+                                    }}
+                                >
+                                    Contact
+                                </div>
                             </div>
                         </div>
 
-                        <div
-                            className="chapter-name"
-                            onClick={() => {
-                                this.handleClick("2");
-                            }}
-                        >
-                            Chương 02. Không bao
+                        <div className="chapter">
+                            <div
+                                className="chapter-name"
+                                onClick={() => {
+                                    this.handleClickChapter("1");
+                                }}
+                            >
+                                Chương 01. Nay kia
+                            </div>
+                            <div
+                                className={
+                                    this.state.idChapter === "1"
+                                        ? "chapter-click"
+                                        : "chapter-none-click"
+                                }
+                            >
+                                <div
+                                    className={
+                                        this.state.idLesson === "0"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("0");
+                                    }}
+                                >
+                                    Home
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "1"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("1");
+                                    }}
+                                >
+                                    News
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "2"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("2");
+                                    }}
+                                >
+                                    Contact
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="chapter">
+                            <div
+                                className="chapter-name"
+                                onClick={() => {
+                                    this.handleClickChapter("2");
+                                }}
+                            >
+                                Chương 02. Tinh yeu
+                            </div>
                             <div
                                 className={
                                     this.state.idChapter === "2"
-                                        ? "lesson-title-click"
-                                        : "lesson-title-none-click"
+                                        ? "chapter-click"
+                                        : "chapter-none-click"
                                 }
                             >
-                                <a href="#home">Home</a>
-                                <a href="#news">News</a>
-                                <a href="#contact">Contact</a>
-                                <a href="#home">Home</a>
-                                <a href="#news">News</a>
-                                <a href="#contact">Contact</a>
-                                <a href="#about">About</a>
-                                <a href="#support">Support</a>
-                                <a href="#blog">Blog</a>
-                                <a href="#tools">Tools</a>
+                                <div
+                                    className={
+                                        this.state.idLesson === "0"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("0");
+                                    }}
+                                >
+                                    Home
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "1"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("1");
+                                    }}
+                                >
+                                    News
+                                </div>
+                                <div
+                                    className={
+                                        this.state.idLesson === "2"
+                                            ? "active"
+                                            : "non-active"
+                                    }
+                                    onClick={() => {
+                                        this.handleClickLesson("2");
+                                    }}
+                                >
+                                    Contact
+                                </div>
                             </div>
                         </div>
                     </div>
