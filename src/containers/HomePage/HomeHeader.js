@@ -6,8 +6,22 @@ import { LANGUAGES } from "../../utils";
 import { changeLanguageApp } from "../../store/actions";
 
 class HomeHeader extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            idChapter: "",
+        };
+    }
+
     changeLanguage = (language) => {
         this.props.changeLanguageAppRedux(language);
+    };
+
+    handleClick = (idRequest) => {
+        this.setState({
+            idChapter: idRequest,
+        });
+        console.log("check id >>>", this.state.idChapter);
     };
 
     render() {
@@ -17,47 +31,77 @@ class HomeHeader extends Component {
             <React.Fragment>
                 <div className="container">
                     <div class="scrollmenu">
-                        <div className="chapter-name">
+                        <div
+                            className="chapter-name"
+                            onClick={() => {
+                                this.handleClick("0");
+                            }}
+                        >
                             Chương 00. Gioi thieu
-                            <a href="#home">Home</a>
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
+                            <div
+                                className={
+                                    this.state.idChapter === "0"
+                                        ? "lesson-title-click"
+                                        : "lesson-title-none-click"
+                                }
+                            >
+                                <a href="#home">Home</a>
+                                <a href="#news">News</a>
+                                <a href="#contact">Contact</a>
+                            </div>
                         </div>
-                        <div className="chapter-name">
+                        <div
+                            className="chapter-name"
+                            onClick={() => {
+                                this.handleClick("1");
+                            }}
+                        >
                             Chương 01. Khao bông
-                            <a href="#home">Home</a>
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#home">Home</a>
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#about">About</a>
-                            <a href="#support">Support</a>
-                            <a href="#blog">Blog</a>
-                            <a href="#tools">Tools</a>
-                            <a href="#base">Base</a>
-                            <a href="#custom">Custom</a>
-                            <a href="#more">More</a>
-                            <a href="#logo">Logo</a>
-                            <a href="#friends">Friends</a>
-                            <a href="#partners">Partners</a>
-                            <a href="#people">People</a>
-                            <a href="#work">Work</a>
-                            <a href="#home">Home</a>
-                            <a href="#news">News</a>
-                            <a href="#contact">Contact</a>
-                            <a href="#about">About</a>
-                            <a href="#support">Support</a>
-                            <a href="#blog">Blog</a>
-                            <a href="#tools">Tools</a>
-                            <a href="#base">Base</a>
-                            <a href="#custom">Custom</a>
-                            <a href="#more">More</a>
-                            <a href="#logo">Logo</a>
-                            <a href="#friends">Friends</a>
-                            <a href="#partners">Partners</a>
-                            <a href="#people">People</a>
-                            <a href="#work">Work</a>
+                            <div
+                                className={
+                                    this.state.idChapter === "1"
+                                        ? "lesson-title-click"
+                                        : "lesson-title-none-click"
+                                }
+                            >
+                                <a href="#home">Home</a>
+                                <a href="#news">News</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#home">Home</a>
+                                <a href="#news">News</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#about">About</a>
+                                <a href="#support">Support</a>
+                                <a href="#blog">Blog</a>
+                                <a href="#tools">Tools</a>
+                            </div>
+                        </div>
+
+                        <div
+                            className="chapter-name"
+                            onClick={() => {
+                                this.handleClick("2");
+                            }}
+                        >
+                            Chương 02. Không bao
+                            <div
+                                className={
+                                    this.state.idChapter === "2"
+                                        ? "lesson-title-click"
+                                        : "lesson-title-none-click"
+                                }
+                            >
+                                <a href="#home">Home</a>
+                                <a href="#news">News</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#home">Home</a>
+                                <a href="#news">News</a>
+                                <a href="#contact">Contact</a>
+                                <a href="#about">About</a>
+                                <a href="#support">Support</a>
+                                <a href="#blog">Blog</a>
+                                <a href="#tools">Tools</a>
+                            </div>
                         </div>
                     </div>
                     <div className="main-content">Main content</div>

@@ -14,23 +14,44 @@
         white-space: nowrap;
 
         .chapter-name {
-            display: flex;
-            flex-direction: column;
+            position: relative;
+            display: inline-block;
+            // display: flex;
+            // flex-direction: column;
             color: white;
             font-size: 20px;
             padding: 17px;
 
+            .lesson-title-none-click {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                // z-index: 1;
+            }
+
+            .lesson-title-click {
+                display: contents;
+                position: absolute;
+                background-color: #f1f1f1;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            }
+
             a {
-                display: inline-block;
-                color: white;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
                 text-align: left;
                 padding: 8px 5px 8px 28px;
                 text-decoration: none;
                 font-size: 15px;
-            }
 
-            a:hover {
-                background-color: #777;
+                &:hover {
+                    background-color: #777;
+                }
             }
         }
     }
