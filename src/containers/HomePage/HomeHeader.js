@@ -4,13 +4,44 @@ import "./HomeHeader.scss";
 import { FormattedMessage } from "react-intl";
 import { LANGUAGES } from "../../utils";
 import { changeLanguageApp } from "../../store/actions";
+import { toInteger } from "lodash";
 
+let arrVideo = [
+    //chuong00
+    [
+        {
+            title: "Chuong0 Bai 01",
+            "video-source": "https://www.youtube.com/embed/qcKbuAWj8TM",
+        },
+        {
+            title: "Chuong0 Bai 02",
+            "video-source": "https://www.youtube.com/embed/qcKbuAWj8TM",
+        },
+    ],
+    //chuong01
+    [
+        {
+            title: "Chuong01 Bai 01",
+            "video-source": "https://www.youtube.com/embed/qcKbuAWj8TM",
+        },
+        {
+            title: "Chuong01 Bai 02",
+            "video-source": "https://www.youtube.com/embed/qcKbuAWj8TM",
+        },
+        {
+            title: "",
+            "video-source": "",
+        },
+    ],
+];
 class HomeHeader extends Component {
     constructor(props) {
         super(props);
         this.state = {
             idChapter: "",
             idLesson: "",
+            videoTitle: "",
+            nguonVideo: "",
         };
     }
 
@@ -29,11 +60,37 @@ class HomeHeader extends Component {
         console.log("check id chapter >>>", this.state.idChapter);
     };
 
-    handleClickLesson = (idLessonRequest) => {
+    handleClickLesson = (idChapterRequest, idLessonRequest) => {
         this.setState({
             idLesson: idLessonRequest,
         });
-        console.log("check id lesson >>>", this.state.idLesson);
+        console.log(
+            `check id chapter - lesson >>> ${this.state.idChapter} ${this.state.idLesson}`
+        );
+
+        this.handleUpdateTitleVideo(idChapterRequest, idLessonRequest);
+    };
+
+    handleUpdateTitleVideo = (idChapterRequest, idLessonRequest) => {
+        console.log(`check arrVideo>>> title: ${
+            arrVideo[toInteger(idChapterRequest)][toInteger(idLessonRequest)]
+                .title
+        } , 
+        src: ${
+            arrVideo[toInteger(idChapterRequest)][toInteger(idLessonRequest)][
+                "video-source"
+            ]
+        }`);
+        this.setState({
+            videoTitle:
+                arrVideo[toInteger(idChapterRequest)][
+                    toInteger(idLessonRequest)
+                ].title,
+            nguonVideo:
+                arrVideo[toInteger(idChapterRequest)][
+                    toInteger(idLessonRequest)
+                ]["video-source"],
+        });
     };
 
     render() {
@@ -41,6 +98,7 @@ class HomeHeader extends Component {
             <React.Fragment>
                 <div className="container">
                     <div class="scrollmenu">
+                        {/* chuong00 */}
                         <div className="chapter">
                             <div
                                 className="chapter-name"
@@ -64,7 +122,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("0");
+                                        this.handleClickLesson("0", "0");
                                     }}
                                 >
                                     Home
@@ -76,7 +134,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("1");
+                                        this.handleClickLesson("0", "1");
                                     }}
                                 >
                                     News
@@ -88,7 +146,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("2");
+                                        this.handleClickLesson("0", "2");
                                     }}
                                 >
                                     Contact
@@ -96,6 +154,7 @@ class HomeHeader extends Component {
                             </div>
                         </div>
 
+                        {/* chuong01 */}
                         <div className="chapter">
                             <div
                                 className="chapter-name"
@@ -119,7 +178,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("0");
+                                        this.handleClickLesson("1", "0");
                                     }}
                                 >
                                     Home
@@ -131,7 +190,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("1");
+                                        this.handleClickLesson("1", "1");
                                     }}
                                 >
                                     News
@@ -143,7 +202,7 @@ class HomeHeader extends Component {
                                             : "non-active"
                                     }
                                     onClick={() => {
-                                        this.handleClickLesson("2");
+                                        this.handleClickLesson("1", "2");
                                     }}
                                 >
                                     Contact
@@ -151,6 +210,7 @@ class HomeHeader extends Component {
                             </div>
                         </div>
 
+                        {/* chuong02 */}
                         <div className="chapter">
                             <div
                                 className="chapter-name"
@@ -206,7 +266,24 @@ class HomeHeader extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="main-content">Main content</div>
+                    <div className="main-content">
+                        <div className="video-title">
+                            {this.state.videoTitle}
+                        </div>
+                        <div className="video">
+                            <iframe
+                                width="1296"
+                                height="729"
+                                // src={this.state.nguonVideo}
+                                src={this.state.nguonVideo}
+                                title=""
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin"
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                    </div>
                 </div>
             </React.Fragment>
         );
