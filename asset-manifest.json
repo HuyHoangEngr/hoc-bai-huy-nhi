@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/HuyHoangEngr/hoc-bai-huy-nhi/static/css/main.ce2cfb86.chunk.css",
-    "main.js": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/main.2f4b7b7e.chunk.js",
-    "main.js.map": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/main.2f4b7b7e.chunk.js.map",
-    "runtime-main.js": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/runtime-main.4be8aaaa.js",
-    "runtime-main.js.map": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/runtime-main.4be8aaaa.js.map",
-    "static/css/2.822de60e.chunk.css": "/HuyHoangEngr/hoc-bai-huy-nhi/static/css/2.822de60e.chunk.css",
-    "static/js/2.69c8e070.chunk.js": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js",
-    "static/js/2.69c8e070.chunk.js.map": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.map",
-    "index.html": "/HuyHoangEngr/hoc-bai-huy-nhi/index.html",
-    "static/css/2.822de60e.chunk.css.map": "/HuyHoangEngr/hoc-bai-huy-nhi/static/css/2.822de60e.chunk.css.map",
-    "static/css/main.ce2cfb86.chunk.css.map": "/HuyHoangEngr/hoc-bai-huy-nhi/static/css/main.ce2cfb86.chunk.css.map",
-    "static/js/2.69c8e070.chunk.js.LICENSE.txt": "/HuyHoangEngr/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.LICENSE.txt",
-    "static/media/HomePage.scss": "/HuyHoangEngr/hoc-bai-huy-nhi/static/media/handbook.8d6c3755.webp",
-    "static/media/styles.scss": "/HuyHoangEngr/hoc-bai-huy-nhi/static/media/fa-solid-900.d279d01b.svg",
-    "static/media/slick-theme.css": "/HuyHoangEngr/hoc-bai-huy-nhi/static/media/slick.c94f7671.ttf"
+    "main.css": "/hoc-bai-huy-nhi/static/css/main.1a36a2b3.chunk.css",
+    "main.js": "/hoc-bai-huy-nhi/static/js/main.df8963a3.chunk.js",
+    "main.js.map": "/hoc-bai-huy-nhi/static/js/main.df8963a3.chunk.js.map",
+    "runtime-main.js": "/hoc-bai-huy-nhi/static/js/runtime-main.dc7a3d1c.js",
+    "runtime-main.js.map": "/hoc-bai-huy-nhi/static/js/runtime-main.dc7a3d1c.js.map",
+    "static/css/2.e654be70.chunk.css": "/hoc-bai-huy-nhi/static/css/2.e654be70.chunk.css",
+    "static/js/2.69c8e070.chunk.js": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js",
+    "static/js/2.69c8e070.chunk.js.map": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.map",
+    "index.html": "/hoc-bai-huy-nhi/index.html",
+    "static/css/2.e654be70.chunk.css.map": "/hoc-bai-huy-nhi/static/css/2.e654be70.chunk.css.map",
+    "static/css/main.1a36a2b3.chunk.css.map": "/hoc-bai-huy-nhi/static/css/main.1a36a2b3.chunk.css.map",
+    "static/js/2.69c8e070.chunk.js.LICENSE.txt": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.LICENSE.txt",
+    "static/media/HomePage.scss": "/hoc-bai-huy-nhi/static/media/handbook.8d6c3755.webp",
+    "static/media/styles.scss": "/hoc-bai-huy-nhi/static/media/fa-solid-900.d279d01b.svg",
+    "static/media/slick-theme.css": "/hoc-bai-huy-nhi/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
-    "static/js/runtime-main.4be8aaaa.js",
-    "static/css/2.822de60e.chunk.css",
+    "static/js/runtime-main.dc7a3d1c.js",
+    "static/css/2.e654be70.chunk.css",
     "static/js/2.69c8e070.chunk.js",
-    "static/css/main.ce2cfb86.chunk.css",
-    "static/js/main.2f4b7b7e.chunk.js"
+    "static/css/main.1a36a2b3.chunk.css",
+    "static/js/main.df8963a3.chunk.js"
   ]
 }
