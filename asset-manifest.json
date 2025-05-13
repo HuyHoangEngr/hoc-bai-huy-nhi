@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/hoc-bai-huy-nhi/static/css/main.1a36a2b3.chunk.css",
+    "main.css": "/hoc-bai-huy-nhi/static/css/main.5ff30994.chunk.css",
     "main.js": "/hoc-bai-huy-nhi/static/js/main.df8963a3.chunk.js",
     "main.js.map": "/hoc-bai-huy-nhi/static/js/main.df8963a3.chunk.js.map",
     "runtime-main.js": "/hoc-bai-huy-nhi/static/js/runtime-main.dc7a3d1c.js",
     "runtime-main.js.map": "/hoc-bai-huy-nhi/static/js/runtime-main.dc7a3d1c.js.map",
-    "static/css/2.e654be70.chunk.css": "/hoc-bai-huy-nhi/static/css/2.e654be70.chunk.css",
+    "static/css/2.01810d6a.chunk.css": "/hoc-bai-huy-nhi/static/css/2.01810d6a.chunk.css",
     "static/js/2.69c8e070.chunk.js": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js",
     "static/js/2.69c8e070.chunk.js.map": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.map",
     "index.html": "/hoc-bai-huy-nhi/index.html",
-    "static/css/2.e654be70.chunk.css.map": "/hoc-bai-huy-nhi/static/css/2.e654be70.chunk.css.map",
-    "static/css/main.1a36a2b3.chunk.css.map": "/hoc-bai-huy-nhi/static/css/main.1a36a2b3.chunk.css.map",
+    "static/css/2.01810d6a.chunk.css.map": "/hoc-bai-huy-nhi/static/css/2.01810d6a.chunk.css.map",
+    "static/css/main.5ff30994.chunk.css.map": "/hoc-bai-huy-nhi/static/css/main.5ff30994.chunk.css.map",
     "static/js/2.69c8e070.chunk.js.LICENSE.txt": "/hoc-bai-huy-nhi/static/js/2.69c8e070.chunk.js.LICENSE.txt",
     "static/media/HomePage.scss": "/hoc-bai-huy-nhi/static/media/handbook.8d6c3755.webp",
     "static/media/styles.scss": "/hoc-bai-huy-nhi/static/media/fa-solid-900.d279d01b.svg",
@@ -18,9 +18,9 @@
   },
   "entrypoints": [
     "static/js/runtime-main.dc7a3d1c.js",
-    "static/css/2.e654be70.chunk.css",
+    "static/css/2.01810d6a.chunk.css",
     "static/js/2.69c8e070.chunk.js",
-    "static/css/main.1a36a2b3.chunk.css",
+    "static/css/main.5ff30994.chunk.css",
     "static/js/main.df8963a3.chunk.js"
   ]
 }
